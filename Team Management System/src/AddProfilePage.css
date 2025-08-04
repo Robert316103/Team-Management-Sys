@@ -1,0 +1,54 @@
+.add-profile-container {
+  padding: 2rem;
+  background-color: #f9fbfe;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.page-title {
+  color: #2b6fc6;
+  margin-bottom: 1.5rem;
+}
+
+.add-profile-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  gap: 1rem;
+}
+
+.add-profile-form input,
+.add-profile-form textarea,
+.add-profile-form select {
+  padding: 0.75rem;
+  border: 1px solid #cdd5df;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.add-profile-form input:focus,
+.add-profile-form textarea:focus,
+.add-profile-form select:focus {
+  outline: none;
+  border-color: #2b6fc6;
+  box-shadow: 0 0 0 2px #c3dafe;
+}
+
+.add-profile-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.add-profile-form button {
+  background-color: #2b6fc6;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-profile-form button:hover {
+  background-color: #1a4e96;
+}

@@ -1,0 +1,33 @@
+.quick-link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.6rem 1rem;
+  background-color: #0d6efd;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.quick-link:hover {
+  background-color: #084298;
+  transform: scale(1.05);
+}
+
+.get-started-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #198754;
+  color: white;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.get-started-btn:hover {
+  background-color: #146c43;
+  transform: scale(1.05);
+}

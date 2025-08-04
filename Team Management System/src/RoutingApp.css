@@ -1,0 +1,22 @@
+.navbar {
+  padding: 1rem 2rem;
+  background-color: #f0f6ff;
+  border-bottom: 1px solid #d0dce9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.nav-link {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #2b6fc6;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #123c69;
+  text-decoration: underline;
+}
