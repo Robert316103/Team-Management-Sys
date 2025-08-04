@@ -23,7 +23,7 @@ function HomePage() {
           <h1 style={{ fontSize: '2.5rem', color: '#0d6efd' }}>
             👋 Welcome to Employee Profile Manager
           </h1>
-          <p style={{ fontSize: '1.1rem', color: '#333' }}>
+          <p stlyle={{ fontSize: '1.1rem', color: '#333' }}>
             Effortlessly create, view, and analyze user profiles in one place.
           </p>
           
@@ -52,7 +52,7 @@ function HomePage() {
           padding: '2rem',
           borderRadius: '1rem',
           boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
-        }}>
+        }}>l
           <h2 style={{ color: '#343a40' }}>🚀 What You Can Do</h2>
           <ul style={{ lineHeight: '2rem', fontSize: '1.05rem', paddingLeft: '1rem' }}>
             <li>➕ <strong>Add</strong> new user profiles</li>
@@ -60,7 +60,7 @@ function HomePage() {
             <li>📊 <strong>Analyze</strong> age and gender breakdown</li>
             <li>🛠️ <strong>Edit</strong> or delete profiles</li>
           </ul>
-        </div>
+        </div>l
 
         {/* Quick Links */}
         <div style={{
@@ -80,7 +80,7 @@ function HomePage() {
 
       {/* Footer */}
       <footer style={{ fontSize: '0.85rem', color: '#888', textAlign: 'center', marginTop: '3rem' }}>
-        <p>© {new Date().getFullYear()} Profile Manager App. Built with ❤️ using React.</p>
+        <p>© {new Date().getFullYear()} Employee Profile Manager App. Built with ❤️ using React.</p>
       </footer>
     </div>
   );

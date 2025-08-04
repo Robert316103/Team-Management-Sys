@@ -34,6 +34,8 @@ useEffect(() => {
 								        <Link to="/profiles" className="nav-link">👥 Profiles</Link>
 								        <Link to="/dashboard" className="nav-link">📊 Dashboard</Link>
 								        <Link to="/profiles/new" className="nav-link">➕ Add Profile</Link>
+								          <Link to="/login" className="nav-link">🔑 Login</Link>
+								          <Link to="/login" className="nav-link">🔓 Logout</Link>
 				      			</div>
 				    		</nav>
 
