@@ -23,14 +23,13 @@ function HomePage() {
           <h1 style={{ fontSize: '2.5rem', color: '#0d6efd' }}>
             👋 Welcome to Employee Profile Manager
           </h1>
-          <p stlyle={{ fontSize: '1.1rem', color: '#333' }}>
+          <p style={{ fontSize: '1.1rem', color: '#333' }}>
             Effortlessly create, view, and analyze user profiles in one place.
           </p>
-          
-           <Link to="/dashboard" className="get-started-btn">
-    🚀 Get Started
-        </Link>
 
+          <Link to="/dashboard" className="get-started-btn">
+            🚀 Get Started
+          </Link>
         </div>
         <img
           src="team.png"
@@ -39,20 +38,21 @@ function HomePage() {
         />
       </div>
 
-      {/* Grid Layout for Features & Quick Links */}
+      {/* Grid Layout for Features, Login & Quick Links */}
       <div style={{
         display: 'grid',
         gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
         gap: '2rem',
         marginBottom: '2rem'
       }}>
+        
         {/* Features Section */}
         <div style={{
           backgroundColor: '#fff',
           padding: '2rem',
           borderRadius: '1rem',
           boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
-        }}>l
+        }}>
           <h2 style={{ color: '#343a40' }}>🚀 What You Can Do</h2>
           <ul style={{ lineHeight: '2rem', fontSize: '1.05rem', paddingLeft: '1rem' }}>
             <li>➕ <strong>Add</strong> new user profiles</li>
@@ -60,7 +60,35 @@ function HomePage() {
             <li>📊 <strong>Analyze</strong> age and gender breakdown</li>
             <li>🛠️ <strong>Edit</strong> or delete profiles</li>
           </ul>
-        </div>l
+        </div>
+
+        {/* Login Section */}
+        <div style={{
+          backgroundColor: '#fff',
+          padding: '2rem',
+          borderRadius: '1rem',
+          boxShadow: '0 4px 12px rgba(0,0,0,0.1)'
+        }}>
+          <h2 style={{ color: '#343a40' }}>🔑 Login</h2>
+          <form style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginTop: '1rem' }}>
+            <input
+              type="email"
+              placeholder="Email"
+              required
+              style={inputStyle}
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              required
+              style={inputStyle}
+            />
+            <button type="submit" style={btnStyle}>Login</button>
+            <p style={{ fontSize: '0.9rem', color: '#555' }}>
+              Don't have an account? <Link to="/register" style={{ color: '#0d6efd', textDecoration: 'none' }}>Register here</Link>.
+            </p>
+          </form>
+        </div>
 
         {/* Quick Links */}
         <div style={{
@@ -94,6 +122,23 @@ const linkStyle = {
   borderRadius: '8px',
   fontWeight: 'bold',
   width: 'fit-content',
+};
+
+const inputStyle = {
+  padding: '0.6rem',
+  borderRadius: '8px',
+  border: '1px solid #ccc',
+  fontSize: '1rem'
+};
+
+const btnStyle = {
+  padding: '0.6rem',
+  backgroundColor: '#0d6efd',
+  color: 'white',
+  border: 'none',
+  borderRadius: '8px',
+  fontWeight: 'bold',
+  cursor: 'pointer',
 };
 
 export default HomePage;
