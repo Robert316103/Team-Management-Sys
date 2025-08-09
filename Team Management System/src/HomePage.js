@@ -122,7 +122,7 @@ const linkStyle = {
   borderRadius: '8px',
   fontWeight: 'bold',
   width: 'fit-content',
-};
+}; 
 
 const inputStyle = {
   padding: '0.6rem',
